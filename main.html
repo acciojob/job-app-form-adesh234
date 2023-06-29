@@ -10,8 +10,32 @@
 	<main>
 		<form action="/submit" method="post">
 			<label for ="name">Enter name</label>
-			<input id=""
-			
+			<input id="name" type="text" name="name" required><br>
+
+			<label for="email">Enter Email</label>
+			<input id="email" type="text" name="email" required><br>
+
+			<p>Gender</p>
+			<label for="gender_m">Male</label>
+			<input type="radio" id="gender_m" name="gender" required>
+			<label for="gender_f">Female</label>
+			<input type="radio" id="gender_f" name="gender" required><br>
+
+			<label for="laptop">Select Laptop</label>
+			<select aria-required>
+				<option id="laptop">Apple</option>
+				<option id="laptop">Asus</option>
+				<option id="laptop">HP</option>
+			</select><br>
+
+			<label for="age">Enter age</label>
+			<input id="age" type="text" name="age" required><br>
+
+			<label for="dob">Enter D.O.B</label>
+			<input id="dob" name="dob" type="date" required><br>
+
+			<label for="password">Enter password</label>
+			<input id="password" name="password" required type="password">
 			<br>
 			<button type="submit">Submit</button>
 			
